@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class example
+{
+int a,b;
+public:
+example(int x,int y)
+{
+a=x;
+b=y;
+cout<<"i am raj\n";
+}
+void display()
+{
+    cout<<"values:"<<a<<"\t"<<b;
+}
+};
+int main()
+{
+example object(10,20);
+object.display();
+return 0;
+}
+
