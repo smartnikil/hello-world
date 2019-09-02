@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class marks
+{
+private:
+int m1;
+int m2;
+public:
+marks()
+{
+    m1=0;
+    m2=0;
+}
+marks(int i,int j)
+{
+    m1=i;
+    m2=j;
+}
+void operator=(const marks &m)
+{
+    m1=m.m1;
+    m2=m.m2;
+}
+void display()
+{
+    cout<<"\nmarks of the 1st subj:"<<m1;
+    cout<<"\nmarks of the 2nd subj:"<<m2;
+    
+}
+};
+int main()
+{
+    marks obj1(55,90);
+    marks obj2(42,85);
+    cout<<"marks of the 1st stud:\n";
+    obj1.display();
+    cout<<"\nmarks of the 2nd stud:\n";
+    obj2.display();
+    obj1=obj2;
+    cout<<"\nmarks in the 1st stud:\n";
+    obj1.display();
+    return 0;
+}
